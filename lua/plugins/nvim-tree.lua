@@ -13,6 +13,14 @@ return {
 			view = {
 				width = 45,
 			},
+            filters = {
+                git_ignored = false, -- Exibe arquivos ignorados pelo Git
+                dotfiles = false,    -- Exibe arquivos ocultos (começando com '.')
+            },
+            git = {
+                enable = true,
+                ignore = false,      -- Garante que o Git não oculte arquivos ignorados
+            },
 			renderer = {
 				root_folder_label = false,
 				root_folder_modifier = ":t",
