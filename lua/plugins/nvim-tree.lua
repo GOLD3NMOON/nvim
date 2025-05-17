@@ -2,6 +2,7 @@ return {
 	{
 		"nvim-tree/nvim-tree.lua",
 		version = "*",
+        lazy = false,
 		dependencies = {
 			"nvim-tree/nvim-web-devicons",
 		},
@@ -14,12 +15,12 @@ return {
 				width = 45,
 			},
             filters = {
-                git_ignored = false, -- Exibe arquivos ignorados pelo Git
-                dotfiles = false,    -- Exibe arquivos ocultos (começando com '.')
+                git_ignored = false,
+                dotfiles = false,
             },
             git = {
                 enable = true,
-                ignore = false,      -- Garante que o Git não oculte arquivos ignorados
+                ignore = false,
             },
 			renderer = {
 				root_folder_label = false,

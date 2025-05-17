@@ -18,12 +18,11 @@ return {
                 themes = {
                     persist = {
                         enabled = true,
-                        path = vim.fn.stdpath("config") .. "/lua/core/colorscheme.lua"
+                        path = vim.fn.stdpath("config") .. "/lua/settings/colorscheme.lua"
                     },
                 }
             }
         })
         require('telescope').load_extension('themes')
-        require('telescope').load_extension('file_browser')
     end
 }

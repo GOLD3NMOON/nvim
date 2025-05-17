@@ -1,4 +1,4 @@
-pcall(require, 'core.settings')
 pcall(require, 'core.lazy')
-pcall(require, 'core.mapping')
-pcall(require, "core.colorscheme")
+pcall(require, 'settings.settings')
+pcall(require, 'settings.mapping')
+pcall(require, "settings.colorscheme")
