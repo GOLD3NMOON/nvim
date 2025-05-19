@@ -11,10 +11,36 @@ vim.opt.hlsearch = false
 vim.opt.incsearch = true
 vim.g.mapleader = " "
 vim.opt.fillchars = { eob = " " }
-
 vim.opt.showtabline=2
 vim.opt.termguicolors = true
-vim.opt.pumblend = 0 
-
+vim.opt.pumblend = 0
 vim.opt.relativenumber = true
 vim.o.signcolumn = "no"
+
+_G.icons = {
+  Text = "",
+  Method = "",
+  Function = "󰊕",
+  Constructor = "",
+  Field = "󰜢",
+  Variable = "󰂡",
+  Class = "󰠱",
+  Interface = "",
+  Module = "",
+  Property = "󰜢",
+  Unit = "",
+  Value = "󰎠",
+  Enum = "",
+  Keyword = "󰌋",
+  Snippet = "",
+  Color = "󰏘",
+  File = "󰈙",
+  Reference = "󰈇",
+  Folder = "",
+  EnumMember = "",
+  Constant = "󰏿",
+  Struct = "",
+  Event = "",
+  Operator = "󰆕",
+  TypeParameter = "󰅲",
+}
