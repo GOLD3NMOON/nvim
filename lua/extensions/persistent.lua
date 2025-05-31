@@ -1,9 +1,9 @@
 return -- Lua
 {
   "folke/persistence.nvim",
-  event = "BufReadPre", -- this will only start session saving when an actual file was opened
+  event = "BufReadPre",
   opts = {
-      dir = vim.fn.stdpath("state") .. "/sessions/", -- directory where session files are saved
+      dir = vim.fn.stdpath("state") .. "/sessions/",
       need = 1,
       branch = true
   }

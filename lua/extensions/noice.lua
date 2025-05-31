@@ -2,6 +2,10 @@ return {
 	{
 		"folke/noice.nvim",
 		event = "VeryLazy",
+		dependencies = {
+			"MunifTanjim/nui.nvim",
+			"rcarriga/nvim-notify",
+		},
 		opts = {
 			lsp = {
 				override = {
@@ -16,19 +20,18 @@ return {
 				lsp_doc_border = true,
 			},
 		},
-		dependencies = {
-			"MunifTanjim/nui.nvim",
-			"rcarriga/nvim-notify",
-		},
+        config = function(_, opts)
+            require('noice').setup(opts)
+        end,
 	},
     {
         "rcarriga/nvim-notify",
-        config = function()
-            require("notify").setup({
-                background_colour = "#000000",        
-        })
-    end
-
+        opts = {
+            background_colour = "#000000"
+        },
+        config = function(_, opts)
+            require('notify').setup(opts)
+        end
     }
 }
 
