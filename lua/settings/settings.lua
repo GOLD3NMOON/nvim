@@ -16,5 +16,6 @@ vim.opt.termguicolors = true
 vim.opt.pumblend = 0
 vim.opt.relativenumber = true
 vim.o.signcolumn = "no"
+vim.o.laststatus = 0
 
 vim.lsp.enable('dart_ls')
