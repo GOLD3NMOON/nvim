@@ -29,8 +29,7 @@ local icons = {
 return {
     "saghen/blink.cmp",
     dependencies = "rafamadriz/friendly-snippets",
-    version = "*",
-    event = "InsertEnter",
+        version =  "*",
     opts = {
         keymap = {
             preset = "default",
@@ -66,7 +65,4 @@ return {
             default = { "lsp", "path", "snippets", "buffer" },
         },
     },
-    config = function(_, opts)
-        require("blink.cmp").setup(opts)
-    end
 }
